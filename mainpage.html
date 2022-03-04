@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Management System</title>
+
+<style>
+
+body{
+    background-color:#E7A58C
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.login-signup{
+    flex-direction: column;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+
+}
+
+.admin-login{
+    width: 22vw;
+    margin: auto;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #3381a5;
+    color: white;
+    border: none;
+    cursor: pointer;
+   
+}
+.student-login{
+    width: 22vw;
+    margin: auto;
+    margin-top: 2rem ;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #3381a5;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.student-login:hover{
+    background-color:#33BEFF ;
+}
+
+.admin-login:hover{
+    background-color:#33BEFF ;
+}
+
+h1{
+    color:#ff6600;
+}
+img{
+
+  border-radius: 10px;
+}
+
+.image-akg{
+    display: flex;
+    margin: auto;
+}
+
+.box{
+    background-image:'PP.jpg';
+    display: flex;
+    border: 1px solid grey;
+    /* background-color: white; */
+    margin-right: auto;
+}
+
+</style>
+</head>
+
+<body background="PP.jpg">
+    
+    <h1 style="text-align:center;"></h1>
+    
+    <div class="container">
+        <img class="image-akg" src="PPP.png"  width="400" height="400">
+      
+<div class="box">
+    <div class="login-signup">
+        <button class="admin-login"      onclick="admin()">
+            Admin Login
+        </button>
+        <button  class="student-login" onclick="student()">
+            Student Login
+        </button>
+    </div>
+</div>
+    </div>
+    <script>
+        function student()
+        {
+            location.href = 'studentlogin.php';
+        }
+        function admin()
+        {
+            location.href =  'adminlogin.php';
+        }
+        </script>
+</body>
+</html>

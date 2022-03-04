@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  margin:auto;
+  height:2rem;
+  width:20rem;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding:5px;
+}
+.placement{
+    height: 8rem;
+    font-size: 3rem;
+    font-family: sans;
+    text-transform: uppercase;
+    margin:auto;
+    color:red;
+    text-align:center;
+}
+
+.contact{
+  text-align: center;
+    color:red;
+}
+.submit{
+  width: 15vw;
+    margin: auto;
+    margin-top: 0.3rem ;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #3381a5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin:left;
+}
+</style>
+</head>
+<body>
+<h2 class="placement">placement management system</h2>
+<h3 class="contact">Contact us</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label  for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="xyx@gmail.com">
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="like sadiq...">
+
+    <label for="issue">issue</label>
+    <select id="country" name="country">
+        <option value="select">select</option>
+      <option value="not working">not working properly </option>
+      <option value="time taking">time taking</option>
+      <option value="many bugs">many bugs</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" class="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
